@@ -78,41 +78,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--ocw-primary) !important;
 }
 
-/* ===== Hero ===== */
-.hero-section {
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
-  padding: 10rem 0 5rem;
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-section::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  right: -20%;
-  width: 800px;
-  height: 800px;
-  background: radial-gradient(circle, rgba(13, 110, 253, 0.15) 0%, transparent 70%);
-  border-radius: 50%;
-}
-
-.hero-section::after {
-  content: '';
-  position: absolute;
-  bottom: -30%;
-  left: -10%;
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle, rgba(102, 16, 242, 0.1) 0%, transparent 70%);
-  border-radius: 50%;
-}
-
-.hero-section .container {
-  position: relative;
-  z-index: 2;
-}
-
+/* ===== Hero Shared ===== */
 .hero-tagline {
   font-size: 1.125rem;
   font-weight: 600;
@@ -123,36 +89,6 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin-bottom: 1.5rem;
-}
-
-.hero-title {
-  font-size: 3.5rem;
-  font-weight: 800;
-  color: #fff;
-  line-height: 1.15;
-  margin-bottom: 1.5rem;
-}
-
-.hero-title .highlight {
-  background: var(--ocw-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.hero-text {
-  font-size: 1.2rem;
-  color: #94a3b8;
-  line-height: 1.7;
-  max-width: 560px;
-  margin-bottom: 2.5rem;
-}
-
-.hero-cta .btn {
-  padding: 0.85rem 2rem;
-  font-weight: 600;
-  font-size: 1rem;
-  border-radius: 8px;
 }
 
 .btn-primary-gradient {
@@ -181,8 +117,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+/* Hero stats (used on training page hero) */
 .hero-stats {
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   display: flex;
   gap: 3rem;
 }
@@ -538,13 +475,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #94a3b8;
   line-height: 1.8;
   font-size: 1.05rem;
-}
-
-.hero-cloud-icon {
-  font-size: 14rem;
-  opacity: 0.08;
-  color: #fff;
-  line-height: 1;
 }
 
 .section-divider {
@@ -1291,20 +1221,57 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ===== Responsive ===== */
+
+/* Tablet */
 @media (max-width: 991.98px) {
-  .hero-title { font-size: 2.5rem; }
   .page-hero-title { font-size: 2.25rem; }
   .hero-stats { gap: 2rem; }
   .section-title { font-size: 1.85rem; }
+  .svc-badge { font-size: 2.5rem; }
+  .enterprise-feature { gap: 1rem; }
 }
 
+/* Mobile */
 @media (max-width: 767.98px) {
-  .hero-title { font-size: 2rem; }
   .page-hero-title { font-size: 1.75rem; }
-  .page-hero { padding: 8rem 0 3.5rem; }
+  .page-hero { padding: 7rem 0 3rem; }
+  .page-hero-text { font-size: 1rem; }
+  .hero-tagline { font-size: 0.9rem; letter-spacing: 2px; }
   .hero-stats { flex-wrap: wrap; gap: 1.5rem; }
-  .section-padding { padding: 3.5rem 0; }
-  .cta-section h2 { font-size: 1.85rem; }
-  .compare-col { padding: 0.6rem 0.4rem; font-size: 0.8rem; }
+  .hero-stat h3 { font-size: 1.5rem; }
+  .section-padding { padding: 3rem 0; }
+  .section-title { font-size: 1.5rem; }
+  .section-subtitle { font-size: 1rem; margin-bottom: 2rem; }
+  .cta-section { padding: 3.5rem 0; }
+  .cta-section h2 { font-size: 1.5rem; }
+  .cta-section p { font-size: 1rem; }
+  .btn-cta-white { padding: 0.75rem 1.75rem; font-size: 0.95rem; }
+  .btn-primary-gradient { padding: 0.7rem 1.5rem; font-size: 0.95rem; }
+  .btn-outline-light-custom { padding: 0.7rem 1.5rem; font-size: 0.95rem; }
+  .compare-col { padding: 0.5rem 0.35rem; font-size: 0.75rem; }
   .roi-value { font-size: 1.5rem; min-width: 60px; }
+  .roi-label { font-size: 0.85rem; }
+  .big-stat-number { font-size: 2rem; }
+  .quote-text { font-size: 1.15rem; }
+  .fact-card { padding: 1.25rem; }
+  .fact-number { font-size: 1.75rem; }
+  .pillar-card, .service-card, .phase-card, .format-card { padding: 2rem 1.5rem; }
+  .team-card { padding: 2rem 1.5rem; }
+  .diff-card { padding: 1.5rem 1.25rem; }
+  .footer { padding: 3rem 0 1.5rem; }
+  .footer-bottom { flex-direction: column; gap: 0.5rem; text-align: center; }
+}
+
+/* Small mobile */
+@media (max-width: 575.98px) {
+  .page-hero-title { font-size: 1.5rem; }
+  .page-hero { padding: 6.5rem 0 2.5rem; }
+  .navbar-brand { font-size: 1.25rem; }
+  .hero-stats { gap: 1rem; }
+  .hero-stat h3 { font-size: 1.25rem; }
+  .hero-stat p { font-size: 0.8rem; }
+  .comparison-card { padding: 1rem; }
+  .compare-header { font-size: 0.7rem; }
+  .svc-features-card { padding: 1.5rem; }
+  .roi-card { padding: 1.5rem; }
 }

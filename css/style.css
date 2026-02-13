@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-logo {
-  height: 100px;
+  height: 50px;
   width: auto;
 }
 
@@ -1242,6 +1242,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Mobile */
 @media (max-width: 767.98px) {
+  .navbar-logo { height: 44px; }
   .page-hero-title { font-size: 1.75rem; }
   .page-hero { padding: 7rem 0 3rem; }
   .page-hero-text { font-size: 1rem; }
@@ -1275,7 +1276,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 575.98px) {
   .page-hero-title { font-size: 1.5rem; }
   .page-hero { padding: 6.5rem 0 2.5rem; }
-  .navbar-logo { height: 42px; }
+  .navbar-logo { height: 36px; }
   .hero-stats { gap: 1rem; }
   .hero-stat h3 { font-size: 1.25rem; }
   .hero-stat p { font-size: 0.8rem; }

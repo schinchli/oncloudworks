@@ -1,13 +1,17 @@
 /* ===== OnCloudWorks Custom Styles ===== */
 
 :root {
-  --ocw-primary: #0d6efd;
-  --ocw-primary-dark: #0a58ca;
-  --ocw-accent: #6610f2;
-  --ocw-dark: #0f172a;
+  --ocw-primary: #7C3AED;
+  --ocw-primary-dark: #6D28D9;
+  --ocw-accent: #4C1D95;
+  --ocw-dark: #0f0a1e;
   --ocw-gray: #475569;
-  --ocw-light: #f8fafc;
-  --ocw-gradient: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%);
+  --ocw-light: #f8f7fc;
+  --ocw-gradient: linear-gradient(135deg, #4C1D95 0%, #7C3AED 100%);
+}
+
+.text-primary {
+  color: var(--ocw-primary) !important;
 }
 
 /* ===== Global ===== */
@@ -99,7 +103,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-primary-gradient:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(13, 110, 253, 0.35);
+  box-shadow: 0 8px 25px rgba(124, 58, 237, 0.35);
   color: #fff;
 }
 
@@ -281,7 +285,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 72px;
   height: 72px;
   border-radius: 16px;
-  background: rgba(13, 110, 253, 0.15);
+  background: rgba(124, 58, 237, 0.15);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -322,7 +326,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  background: linear-gradient(135deg, rgba(13, 110, 253, 0.1), rgba(102, 16, 242, 0.1));
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(76, 29, 149, 0.1));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -427,7 +431,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-bottom {
-  border-top: 1px solid #1e293b;
+  border-top: 1px solid #2d1f54;
   padding-top: 2rem;
   margin-top: 3rem;
 }
@@ -439,7 +443,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 40px;
   height: 40px;
   border-radius: 8px;
-  background: #1e293b;
+  background: #1a1145;
   color: #94a3b8;
   margin-right: 0.5rem;
   transition: all 0.2s;
@@ -533,7 +537,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ===== Page Hero (inner pages) ===== */
 .page-hero {
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+  background: linear-gradient(135deg, #0f0a1e 0%, #1a1145 50%, #0f0a1e 100%);
   padding: 10rem 0 5rem;
   position: relative;
   overflow: hidden;
@@ -546,7 +550,7 @@ h1, h2, h3, h4, h5, h6 {
   right: -15%;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(13, 110, 253, 0.12) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.15) 0%, transparent 70%);
   border-radius: 50%;
 }
 
@@ -557,6 +561,13 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   margin-bottom: 1rem;
   max-width: 700px;
+}
+
+.page-hero-title .highlight {
+  background: var(--ocw-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .page-hero-text {
@@ -615,7 +626,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 72px;
   height: 72px;
   border-radius: 50%;
-  background: linear-gradient(135deg, rgba(13, 110, 253, 0.1), rgba(102, 16, 242, 0.1));
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(76, 29, 149, 0.1));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -667,7 +678,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 56px;
   height: 56px;
   border-radius: 12px;
-  background: linear-gradient(135deg, rgba(13, 110, 253, 0.1), rgba(102, 16, 242, 0.1));
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(76, 29, 149, 0.1));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -740,7 +751,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 60px;
   height: 60px;
   border-radius: 14px;
-  background: linear-gradient(135deg, rgba(13, 110, 253, 0.1), rgba(102, 16, 242, 0.1));
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(76, 29, 149, 0.1));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -769,13 +780,13 @@ h1, h2, h3, h4, h5, h6 {
 .badge-pill {
   display: inline-flex;
   align-items: center;
-  background: linear-gradient(135deg, rgba(13, 110, 253, 0.08), rgba(102, 16, 242, 0.08));
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.08), rgba(76, 29, 149, 0.08));
   color: var(--ocw-primary);
   font-weight: 600;
   font-size: 0.85rem;
   padding: 0.5rem 1rem;
   border-radius: 50px;
-  border: 1px solid rgba(13, 110, 253, 0.15);
+  border: 1px solid rgba(124, 58, 237, 0.15);
 }
 
 /* ===== About: Fact Card Alt ===== */
@@ -929,7 +940,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .phase-tag {
   display: inline-block;
-  background: linear-gradient(135deg, rgba(13, 110, 253, 0.08), rgba(102, 16, 242, 0.08));
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.08), rgba(76, 29, 149, 0.08));
   color: var(--ocw-primary);
   font-weight: 600;
   font-size: 0.8rem;
@@ -964,7 +975,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cert-header-pro {
-  background: linear-gradient(135deg, #6610f2 0%, #0d6efd 100%);
+  background: linear-gradient(135deg, #7C3AED 0%, #4C1D95 100%);
 }
 
 .cert-body {
@@ -1022,7 +1033,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 64px;
   height: 64px;
   border-radius: 16px;
-  background: linear-gradient(135deg, rgba(13, 110, 253, 0.1), rgba(102, 16, 242, 0.1));
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(76, 29, 149, 0.1));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1113,7 +1124,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 48px;
   height: 48px;
   border-radius: 12px;
-  background: linear-gradient(135deg, rgba(13, 110, 253, 0.1), rgba(102, 16, 242, 0.1));
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(76, 29, 149, 0.1));
   display: flex;
   align-items: center;
   justify-content: center;

@@ -57,13 +57,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-brand {
-  font-weight: 800;
-  font-size: 1.5rem;
-  color: var(--ocw-primary) !important;
+  padding: 0.25rem 0;
 }
 
-.navbar-brand span {
-  color: var(--ocw-dark);
+.navbar-logo {
+  height: 40px;
+  width: auto;
 }
 
 .nav-link {
@@ -393,14 +392,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-brand {
-  font-weight: 800;
-  font-size: 1.35rem;
-  color: #fff;
   margin-bottom: 1rem;
 }
 
-.footer-brand span {
-  color: var(--ocw-primary);
+.footer-logo {
+  height: 36px;
+  width: auto;
+  filter: brightness(0) invert(1);
 }
 
 .footer p {
@@ -1266,7 +1264,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 575.98px) {
   .page-hero-title { font-size: 1.5rem; }
   .page-hero { padding: 6.5rem 0 2.5rem; }
-  .navbar-brand { font-size: 1.25rem; }
+  .navbar-logo { height: 34px; }
   .hero-stats { gap: 1rem; }
   .hero-stat h3 { font-size: 1.25rem; }
   .hero-stat p { font-size: 0.8rem; }
